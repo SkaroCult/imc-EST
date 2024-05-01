@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section#imc{
+    border: 2px solid black;
+    padding: 30px;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+}
+main section#imc h1{
+    font-size: 37px;
+
+}
+main section#imc section#tabela{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+main section#imc section#tabela ul{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 0px;
+    width: 40%;
+}
+main section#imc section#tabela ul li{
+    font-size: 20px;
+}
