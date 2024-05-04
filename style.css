@@ -4,6 +4,10 @@
     text-decoration: none;
     list-style-type: none;
     border: none;
+    box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
 }
 
 main{
@@ -14,21 +18,24 @@ main{
 main section#imc{
     border: 2px solid black;
     padding: 30px;
-    margin-top:30px;
+    margin:30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40vw;
+    width: 60vw;
+
 }
 main section#imc h1{
     font-size: 37px;
+    font-family: sans-serif;
 
 }
 main section#imc section#tabela{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main section#imc section#tabela ul{
     border: 1px solid black;
@@ -38,4 +45,60 @@ main section#imc section#tabela ul{
 }
 main section#imc section#tabela ul li{
     font-size: 20px;
+}
+main section#imc h2{
+    font-size: 26px;
+    font-family: sans-serif;
+}
+main section#imc section#inputs{
+    display: flex;
+}
+main section#imc section#inputs div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px
+}
+main section#imc section#inputs div h3{
+    font-size: 24px;
+    margin-bottom: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main section#imc section#inputs div input{
+    border-bottom: 1px solid black;
+    width: 60%;
+    padding: 3% 10%;
+    font-size: 20px;
+}
+main section#imc div#botao{
+    font-size: 29px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: rgb(46, 201, 46);
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 15px 20px;
+}
+main section#imc section#result{
+    width: 90%;
+    padding: 4%;
+    background-color: rgb(121, 121, 121);
+    color: white;
+    margin-top: 20px;
+}
+main section#imc section#result h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+main section#imc section#result h4{
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main section#imc section#result section#inner{
+    font-size: 24px;
+    margin-top: 10px;
+}
+main section#imc section#result section#inner span{
+    font-style: italic;
 }

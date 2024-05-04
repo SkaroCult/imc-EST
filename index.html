@@ -13,16 +13,16 @@
             <h1>Calculadora de IMC</h1>
             <section id="tabela">
                 <ul>
-                    <li><h2>IMC</h2></li>
+                    <li><h3>IMC</h3></li>
                     <li>Menos do que 18,5</li>
                     <li>Entre 18,5 e 24,9</li>
-                    <li>Entre 25 e 24,9</li>
-                    <li>Entre 30 e 24,9</li>
-                    <li>Entre 35 e 24,9</li>
+                    <li>Entre 25 e 29,9</li>
+                    <li>Entre 30 e 34,9</li>
+                    <li>Entre 35 e 39,9</li>
                     <li>Mais do que 40</li>
                 </ul>
                 <ul>
-                    <li><h2>Resultado</h2></li>
+                    <li><h3>Resultado</h3></li>
                     <li>Abaixo do peso</li>
                     <li>peso normal</li>
                     <li>Sobrepeso</li>
@@ -32,10 +32,26 @@
                 </ul>
             </section>
             <h2>Calcule seu IMC</h2>
-            <h3>Peso:</h3>
-            <input type="number" name="Peso" id="peso">
-            <h3>Altura:</h3>
-            <input type="number" name="Altura" id="altura">
+            <section id="inputs">
+                <div>
+                    <h3>Peso:</h3>
+                    <input type="number" name="Peso" id="peso">
+                </div>
+                <div>
+                    <h3>Altura:</h3>
+                    <input type="number" name="Altura" id="altura">
+                </div>
+            </section>
+            <div id="botao">
+                <h3>Calcular</h3>
+            </div>
+            <section id="result">
+                <h3>Resultado</h3>
+                <h4>Valor IMC:</h4>
+                <section id="inner"></section>
+            </section>
         </section>
     </main>
+
+    <script src="code.js"></script>
 </body>
